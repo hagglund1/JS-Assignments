@@ -44,3 +44,19 @@ console.log(gold); //60
 gold %= 2;
 console.log(gold); //0
 
+let NumberOfStudents = 0;
+NumberOfStudents += 1;
+console.log(NumberOfStudents); //1
+
+NumberOfStudents ++;
+console.log(NumberOfStudents); //2
+
+++NumberOfStudents;
+console.log(NumberOfStudents); //3
+
+console.log (NumberOfStudents++); //3 WHY???
+console.log(NumberOfStudents); //4
+
+//NumberOfStudents --;
+//console.log(NumberOfStudents); //1
+
