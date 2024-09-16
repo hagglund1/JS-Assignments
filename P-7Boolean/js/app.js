@@ -9,3 +9,14 @@ console.log(isChild)
 console.log(isTeenager)
 console.log(isAdult)
 
+
+
+
+
+
+
+
+
+
+
+
