@@ -13,40 +13,65 @@ function getRandomNumber() {
   return Math.floor(Math.random() * 3);
 }
 
-// Exempel på användning:
+
 console.log(getRandomNumber());
 
-function numberToLetter(num) {
-  if (num === 0) {
-    return 'A';
-  } else if (num === 1) {
-    return 'B';
-  } else if (num === 2) {
-    return 'C';
-  } else {
-    return 'Invalid input';
+function numbersToLetter(number) {
+  if (number === 0) {
+    return "A";
+  } if (number === 1) {
+    return "B";
+  } if (number === 2) {
+    return "C";
+  } if (number === 3) {
+    return "Invalid You Idiot, Try Again";
+  } else if (number === 4) {
+    return "well well";
   }
 }
 
-// Exempel på användning:
-console.log(numberToLetter(0)); // Output: A
-console.log(numberToLetter(1)); // Output: B
-console.log(numberToLetter(2)); // Output: C
+console.log(numbersToLetter(0));
+console.log(numbersToLetter(1));
+console.log(numbersToLetter(2));
+console.log(numbersToLetter(3));
+console.log(numbersToLetter(4));
 
-function compareNumbers(num1, num2) {
-  if (num1 === num2) {
-    return "Both numbers are equal!";
-  } else if (num1 > num2) {
-    return "First number is greater!";
-  } else {
-    return "Second number is greater!";
-  }
+
+
+
+
+
+function compareNumbers (number1, number2) {
+ if (number1 === number2) {
+    return "numbers are equal";
+  } else if (number1 < number2) {
+      return "number2 is greater than number1";
+    } else if (number1 > number2) {
+   return "number1 is greater than number2";
+ }
+
 }
+ console.log(compareNumbers(6,8));
 
-// Exempel på användning:
-console.log(compareNumbers(1, 2)); // Output: Second number is greater!
-console.log(compareNumbers(3, 3)); // Output: Both numbers are equal!
-console.log(compareNumbers(5, 1)); // Output: First number is greater!
+
+
+
+
+
+//function compareNumbers(num1, num2) {
+  //if (num1 === num2) {
+    //return "Both numbers are equal!";
+  //} else if (num1 > num2) {
+    //return "First number is greater!";
+  //} else {
+    //return "Second number is greater!";
+  //}
+//}
+
+
+//console.log(compareNumbers(1, 2));
+//console.log(compareNumbers(3, 3));
+//console.log(compareNumbers(5, 1));
 
 
 
