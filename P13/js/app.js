@@ -1,33 +1,27 @@
-//Document Elements
-//looks for text 0, assigns it to variable calls textField0
-const textField0 = document.getElementById('text0');
-const textField1 = document.getElementById('text1');
+// Document element
+// Looks for "text0". Assigns that to the variable called textField0
+const textField0 = document.getElementById("text0");
 
+const increaseScoreButton = document.getElementById("button0");
 // Internal Variables
-let score = 0;
+let score = Math.floor (Math.random() * 100);
+// Process (What is going to happen in what sequence)
+increaseScoreButton.addEventListener("click", () => {
+  increaseScoreByOne()
+});
 
-// Process
 
-increaseScoreByOne();
 
-//controllers
-function sendScore (inputNumber){
-  return inputNumber * 100 //output is a number
-}
-
-function showStylizedScore (scoreNumber){
-  return "your score is " + scoreNumber * 100;
-}
-
-function increaseScoreByOne ( ) {
-  score++;
+// Controllers
+function increaseScoreByOne() {
+  score ++;
   updateScoreText(score);
 }
 
-//view
+// View
 function updateScoreText (newText) {
-  textField0.innerHTML = newText;
+  textField0.innerHTML = "Your body count is " + newText;
 }
-function updateStatus (newText){
+function updateStatusText(newText) {
   textField0.innerHTML = newText;
 }
