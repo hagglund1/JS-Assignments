@@ -1,7 +1,7 @@
-//function doubleNumber (numberToDouble) {
-  //return numberToDouble *4;
-//}
-//console.log(doubleNumber(4));
+function doubleNumber (numberToDouble) {
+return numberToDouble *4;
+}
+console.log(doubleNumber(4));
 
 //function name (){
   //console.log("Ben Ting");
